@@ -5,13 +5,13 @@ public class Main {
 		int[] arr = new int[5];
 		
 		for (int i = 0; i < arr.length; i++) {
-			System.out.println("Marks for Subject number " +(i+1) + " = ");
+			System.out.println("Marks for Subject number " + i + " " + (i+1) + " : ");
 			arr[i] = scan.nextInt();
 		}
 		
 		int total = 0;
 		for (int i = 0; i < arr.length; i++) {
-			total = total + arr[i];
+			total += arr[i];
 		}
 		
 		int average = total/5;
@@ -25,6 +25,7 @@ public class Main {
 		} else {
 			System.out.println("Result : Failed !");
 		}
+		scan.close();
 	}
 
 }

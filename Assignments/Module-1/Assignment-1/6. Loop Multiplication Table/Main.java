@@ -1,4 +1,3 @@
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -9,8 +8,8 @@ public class Main {
 	int a = scan.nextInt();
 	
 	for (int i = 1; i <= 10; i++) {
-	    System.out.println(a + " * " + i +" = "+ ( a * i));
+	    System.out.println(a + " * " + i + " : " + ( a * i));
 	}
+	scan.close();
     }
-
 }

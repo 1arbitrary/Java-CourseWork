@@ -7,11 +7,13 @@ public class Main {
 
 	while(i <= 50) {
 	    if( i % 2 == 0) {
-		a = a + i;
-	    }
-	    i++;
+			a = a + i;
+			i++;
+	    } else {
+			i++;
+		}
 	}
 
-	System.out.println("sum of even numbers from 1 to 50 is = "+ a);
+	System.out.println("Sum of even numbers from 1 to 50 is = " + a);
     }
 }

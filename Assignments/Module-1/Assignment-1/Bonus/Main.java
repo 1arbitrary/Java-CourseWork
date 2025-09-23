@@ -6,16 +6,16 @@ public class Main {
     public static String[] grades = new String[5];
 
     public static void addstudent() {
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter the names and marks of students :- ");
 
         int i = 0;
         do {
             System.out.println(" Student no " + (i + 1) + " : ");
-            students[i] = sc.next();
+            students[i] = scan.next();
             System.out.println(" Marks : ");
-            marks[i] = sc.nextInt();
+            marks[i] = scan.nextInt();
             i++;
         } while (i <= 4);
     }
@@ -38,10 +38,10 @@ public class Main {
     }
 
     public static void search() {
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         String a;
         System.out.println("Enter the student you want to search : ");
-        a = sc.next();
+        a = scan.next();
 
         boolean found = false;
         int i = 0;
@@ -60,13 +60,13 @@ public class Main {
     }
     
     public static void choice() {
-    	Scanner sc = new Scanner(System.in);
+    	Scanner scan = new Scanner(System.in);
         int a;
 
         int i = 3;
         do {
             System.out.println("Enter 1 to add student\n 2 to view all students\n 3 to search student");
-            a = sc.nextInt();
+            a = scan.nextInt();
 
             switch (a) {
                 case 1:
